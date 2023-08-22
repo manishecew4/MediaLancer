@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/icons/camera1.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body class="contactBody">
+    <div class="mainBody">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand col-4" href="./index.html">
+                    <img src="./assets/img/logo.png" alt="" style="max-width:150px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <!-- OffCanvas Start -->
+                <div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <div></div>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="h-100">
+                            <ul class="sideBarMenu">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./index.html"><i class="fa-solid me-2 fa-house"></i>Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html#aboutUs"><i class="fa-solid me-2 fa-address-card"></i>About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contactus.html"> <i class="fa-solid me-2 fa-headset"></i>Contact Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="javascript:void(0)" onclick="openSignin()"><i class="fa-solid me-2 fa-right-to-bracket"></i>Login/Signup</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- OffCanvas End -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="input-group headerSearch col me-auto webview">
+                        <input type="text" class="form-control" placeholder="Search Photographers" aria-label="Search Photographers" aria-describedby="button-addon2">
+                        <a class="btn" href="./search_result.html" id="button-addon2"><i
+                                class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#aboutUs">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactus.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)" onclick="openSignin()">Login/Signup</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="digonal">
+            <div class="container d_center pr z999">
+                <form action="" class="d-flex mx-auto col-12 mt-4 card flex-row">
+                    <div class="card p-3 col-6">
+                        <div class="text-center">
+                            <h4 class="mb-0">Contact Us</h4>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Mobile</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="landmark" class="form-label">Landmark</label>
+                            <input type="text" class="form-control" id="landmark" placeholder="" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pin" class="form-label">PIN</label>
+                            <input type="text" class="form-control" id="pin" placeholder="" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea type="text" class="form-control" id="description" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="btn btn-primary">Submit</a>
+                        </div>
+                    </div>
+                    <div class="card p-3 col-6 jcc">
+                        <div class="row">
+                            <div class="small-12 large-4 columns flex-column">
+                                <div class="d-flex jcc">
+                                    <button class="file-upload">
+                                        <input type="file" id="img_upload" class="file-input btn btn_default">Choose
+                                        Sample Image
+                                    </button>
+                                </div>
+                                <div class="containers mt-4">
+                                    <div class="imageWrapper">
+                                        <img class="image" src="./assets/img/bg/placeholder.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="log_bg">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#fff" fill-opacity="1"
+                        d="M0,96L48,85.3C96,75,192,53,288,37.3C384,21,480,11,576,48C672,85,768,171,864,181.3C960,192,1056,128,1152,122.7C1248,117,1344,171,1392,197.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- ************************************* Models Start****************************************************** -->
+    <div class="modal fade" id="signinMain" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="fp_emailLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content fp_modal ovrlay">
+                <div class="modal-body pr d-flex">
+                    <a class="btn_close p-3" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid text-white fa-xmark h3"></i>
+                    </a>
+                    <div class="card m-auto d-flex flex-row z99 container border-0 p-0 col-sm-12 col-md-9 col-lg-7">
+                        <div class="col-6 loginImg d-flex jcc aic" style="background-color: #2a9d8f;">
+                            <img src="./assets/img/bg/bg.png" class="login_bkgrnd">
+                        </div>
+
+                        <div class="col p-0 log_in card" id="log_in">
+                            <div class="text-center p-3 pr">
+                                <div class="pr">
+                                    <h4 class="fw-bolder loginheader">Welcome back to</h4>
+                                </div>
+                                <img src="./assets/img/logoB.png" class="mt-0" style="max-width:250px">
+                            </div>
+
+                            <form action="" class="mt-3 p-3">
+                                <div class="mb-4">
+                                    <label for="user_login_email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="user_login_email" placeholder="name@example.com">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="user_login_password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="user_login_password" placeholder="*********">
+                                </div>
+                                <div class="d-flex jcsb td_none">
+                                    <!-- <button type="submit" class="btn btn-primary">Login</button> -->
+                                    <a class="btn btn-primary" href="./index.html">Login</a>
+                                    <a href="javascript:void(0)" onclick="openModal()">Forgot Password ?</a>
+                                </div>
+                                <div class="text-center">
+                                    <p class="mb-0">Not a member ? <a class="h5 tdn text-primary" onclick="gotoSignup()" id="gotoSignup">Signup</a></p>
+                                </div>
+                            </form>
+                            <div class="ru_vendorWrap text-center bg_grey card_footer mt-4">
+                                <p class="mb-0">Are you vendor ! Click
+                                    <a href="./vendorContact.html" class="h5 tdn text-primary" onclick="ru_vendor()" id="ru_vendor">Here</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col p-3 sign_up" id="sign_up">
+                            <div class="text-center">
+                                <img src="./assets/img/logo.png" style="max-width:250px">
+                            </div>
+                            <h2 class="fw-bold text-muted">Signup</h2>
+                            <form action="" class="mt-5">
+                                <div class="mb-4">
+                                    <label for="user_signup_name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="user_signup_name" placeholder="">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="user_signup_phone" class="form-label">Phone no.</label>
+                                    <input type="number" class="form-control" id="user_signup_phone" placeholder="">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="user_signup_email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="user_signup_email" placeholder="">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="user_signup_pass" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="user_signup_pass" placeholder="">
+                                </div>
+                                <div class="">
+                                    <button type="submit" class="btn btn-primary">Signup</button>
+                                </div>
+                                <div class="text-center">
+                                    <p class="mb-0">Already a member ? <a class="h5 tdn text-primary" onclick="gotoSignin()" id="gotoSignin">Signin</a></p>
+                                </div>
+                                <div class="ru_vendorWrap text-center mt-2">
+                                    <p class="mb-0">Register as <a class="h5 tdn text-primary" onclick="ru_vendor()" id="ru_vendor">
+                                            Vendor</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Forget Password Modal -->
+
+    <div class="modal fade mt-5" id="fp_email" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="fp_emailLabel" aria-hidden="true">
+        <div class="modal-dialog fp_modal col-sm-8 col-md-5 col-lg-4">
+            <div class="modal-content fp_modal">
+                <div class="modal-body pr">
+                    <a class="btn_close" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="fa-solid fa-xmark"></i></a>
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email Id</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                        </div>
+                        <div class="d-flex">
+                            <button type="button" class="btn btn-primary ms-auto" onclick="go_to_otp()">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- OPT Modal -->
+    <div class="modal fade mt-5" id="otp_email" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="otp_emailLabel" aria-hidden="true">
+        <div class="modal-dialog fp_modal col-sm-8 col-md-5 col-lg-4">
+            <div class="modal-content fp_modal">
+                <div class="modal-body pr">
+                    <a class="btn_close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="otp_input" class="form-label">Enter OTP</label>
+                            <input type="text" class="form-control" id="otp_input" placeholder="">
+                        </div>
+                        <div class="d-flex">
+                            <button type="button" class="btn btn-primary ms-auto" onclick="go_to_newPass()">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Pass Modal -->
+
+    <div class="modal fade mt-5" id="fp_newPass" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="fp_newPassLabel" aria-hidden="true">
+        <div class="modal-dialog fp_modal col-sm-8 col-md-5 col-lg-4">
+            <div class="modal-content fp_modal">
+                <div class="modal-body pr">
+                    <a class="btn_close" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="fa-solid fa-xmark"></i></a>
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="new_pass" class="form-label">New Password</label>
+                            <input type="text" class="form-control" id="new_pass" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="conf_new_pass" class="form-label">Confirm New Password</label>
+                            <input type="password" class="form-control" id="conf_new_pass" placeholder="">
+                        </div>
+                        <div class="d-flex">
+                            <button type="button" class="btn btn-primary ms-auto" onclick="submit_to_newPass()">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ************************************* Models End****************************************************** -->
+    <!-- CDNs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/preview.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <script>
+    </script>
+    <script>
+        $('.file-input').change(function() {
+            var curElement = $('.image');
+            console.log(curElement);
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                // get loaded data and render thumbnail.
+                curElement.attr('src', e.target.result);
+            };
+
+            // read the image file as a data URL.
+            reader.readAsDataURL(this.files[0]);
+        });
+    </script>
+</body>
+
+</html>

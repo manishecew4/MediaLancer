@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/icons/camera1.png">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+</head>
+<section class="main_home">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand col-4" href="./index.html">
+                <img src="./assets/img/logo.png" alt="" style="max-width:150px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <!-- OffCanvas Start -->
+            <div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <div></div>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="h-100">
+                        <ul class="sideBarMenu">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html"><i
+                                        class="fa-solid me-2 fa-house"></i>Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html#aboutUs"><i
+                                        class="fa-solid me-2 fa-address-card"></i>About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contactus.html"> <i
+                                        class="fa-solid me-2 fa-headset"></i>Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)" onclick="openSignin()"><i
+                                        class="fa-solid me-2 fa-right-to-bracket"></i>Login/Signup</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!-- OffCanvas End -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="input-group headerSearch col me-auto webview">
+                    <input type="text" class="form-control" placeholder="Search Photographers"
+                        aria-label="Search Photographers" aria-describedby="button-addon2">
+                    <a class="btn" href="./search_result.html" id="button-addon2"><i
+                            class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#aboutUs">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)" onclick="openSignin()">Login/Signup</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <div class="bannerSlide">
+            <div class="pr">
+                <!-- <div class="bannerOverlay"></div> -->
+                <img src="./assets/img/a.jpg" alt="" class="w-100">
+            </div>
+            <div class="pr">
+                <!-- <div class="bannerOverlay"></div> -->
+                <img src="./assets/img/b.jpg" alt="" class="w-100">
+            </div>
+            <div class="pr">
+                <!-- <div class="bannerOverlay"></div> -->
+                <img src="./assets/img/c.jpg" alt="" class="w-100">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contentsBody">
+
+        <section class="photographerSlideWrap mb-4">
+            <h5 class="slideHead">Popular Photographers</h5>
+            <div class="photographerSlide">
+                <div class="cardWrap">
+                    <a class="card tdn" href="./emp_detail.html">
+                        <div class="card_img pr">
+                            <div class="pcSlide pr">
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/b.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/c.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/d.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/e.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/b.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <img src="./assets/img/user/a.jpg" class="profile_thumb" alt="">
+                            <span class="d-flex empRating aic fw-bold">1.5 / 5</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Peter Da</h5>
+                            <p class="card-text">I do wedding photography with high quality camera. </p>
+                            <div class="d-flex jcsb">
+                                <span class="d-flex">
+                                    <p class="mb-0 me-2">Starting Price</p>
+                                    <h5 class="mb-0 priceStart">₹4999</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cardWrap">
+                    <a class="card tdn" href="./emp_detail.html">
+                        <div class="card_img pr">
+                            <div class="pcSlide pr">
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/c.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/c.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/d.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/e.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/c.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <img src="./assets/img/user/a.jpg" class="profile_thumb" alt="">
+                            <span class="d-flex empRating aic fw-bold">2.5 / 5</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Peter Da</h5>
+                            <p class="card-text">I do wedding photography with high quality camera. </p>
+                            <div class="d-flex jcsb">
+                                <span class="d-flex">
+                                    <p class="mb-0 me-2">Starting Price</p>
+                                    <h5 class="mb-0 priceStart">₹4999</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cardWrap">
+                    <a class="card tdn" href="./emp_detail.html">
+                        <div class="card_img pr">
+                            <div class="pcSlide pr">
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/d.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/c.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/d.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/e.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/d.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <img src="./assets/img/user/a.jpg" class="profile_thumb" alt="">
+                            <span class="d-flex empRating aic fw-bold">3.5 / 5</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Peter Da</h5>
+                            <p class="card-text">I do wedding photography with high quality camera. </p>
+                            <div class="d-flex jcsb">
+                                <span class="d-flex">
+                                    <p class="mb-0 me-2">Starting Price</p>
+                                    <h5 class="mb-0 priceStart">₹4999</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cardWrap">
+                    <a class="card tdn" href="./emp_detail.html">
+                        <div class="card_img pr">
+                            <div class="pcSlide pr">
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/e.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/c.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/d.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/e.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/e.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <img src="./assets/img/user/a.jpg" class="profile_thumb" alt="">
+                            <span class="d-flex empRating aic fw-bold">4.5 / 5</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Peter Da</h5>
+                            <p class="card-text">I do wedding photography with high quality camera. </p>
+                            <div class="d-flex jcsb">
+                                <span class="d-flex">
+                                    <p class="mb-0 me-2">Starting Price</p>
+                                    <h5 class="mb-0 priceStart">₹4999</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cardWrap">
+                    <a class="card tdn" href="./emp_detail.html">
+                        <div class="card_img pr">
+                            <div class="pcSlide pr">
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/f.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/c.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/d.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/e.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/f.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <img src="./assets/img/user/a.jpg" class="profile_thumb" alt="">
+                            <span class="d-flex empRating aic fw-bold">4.5 / 5</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Peter Da</h5>
+                            <p class="card-text">I do wedding photography with high quality camera. </p>
+                            <div class="d-flex jcsb">
+                                <span class="d-flex">
+                                    <p class="mb-0 me-2">Starting Price</p>
+                                    <h5 class="mb-0 priceStart">₹4999</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cardWrap">
+                    <a class="card tdn" href="./emp_detail.html">
+                        <div class="card_img pr">
+                            <div class="pcSlide pr">
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/g.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/c.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/d.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/e.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/g.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <img src="./assets/img/user/a.jpg" class="profile_thumb" alt="">
+                            <span class="d-flex empRating aic fw-bold">4.5 / 5</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Peter Da</h5>
+                            <p class="card-text">I do wedding photography with high quality camera. </p>
+                            <div class="d-flex jcsb">
+                                <span class="d-flex">
+                                    <p class="mb-0 me-2">Starting Price</p>
+                                    <h5 class="mb-0 priceStart">₹4999</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cardWrap">
+                    <a class="card tdn" href="./emp_detail.html">
+                        <div class="card_img pr">
+                            <div class="pcSlide pr">
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/h.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/c.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/d.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/e.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/h.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <img src="./assets/img/user/a.jpg" class="profile_thumb" alt="">
+                            <span class="d-flex empRating aic fw-bold">4.5 / 5</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Peter Da</h5>
+                            <p class="card-text">I do wedding photography with high quality camera. </p>
+                            <div class="d-flex jcsb">
+                                <span class="d-flex">
+                                    <p class="mb-0 me-2">Starting Price</p>
+                                    <h5 class="mb-0 priceStart">₹4999</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cardWrap">
+                    <a class="card tdn" href="./emp_detail.html">
+                        <div class="card_img pr">
+                            <div class="pcSlide pr">
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/i.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/c.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/d.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/e.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/i.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <img src="./assets/img/user/a.jpg" class="profile_thumb" alt="">
+                            <span class="d-flex empRating aic fw-bold">4.5 / 5</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Peter Da</h5>
+                            <p class="card-text">I do wedding photography with high quality camera. </p>
+                            <div class="d-flex jcsb">
+                                <span class="d-flex">
+                                    <p class="mb-0 me-2">Starting Price</p>
+                                    <h5 class="mb-0 priceStart">₹4999</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cardWrap">
+                    <a class="card tdn" href="./emp_detail.html">
+                        <div class="card_img pr">
+                            <div class="pcSlide pr">
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/j.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/c.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/d.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/e.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="pr h-100">
+                                    <img src="./assets/img/photographer/j.jpg" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                            <img src="./assets/img/user/a.jpg" class="profile_thumb" alt="">
+                            <span class="d-flex empRating aic fw-bold">4.5 / 5</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Peter Da</h5>
+                            <p class="card-text">I do wedding photography with high quality camera. </p>
+                            <div class="d-flex jcsb">
+                                <span class="d-flex">
+                                    <p class="mb-0 me-2">Starting Price</p>
+                                    <h5 class="mb-0 priceStart">₹4999</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="videographerSlideWrap m_slider mb-4" style="margin-top:50px !important">
+            <h5 class="slideHead">Popular Videographers</h5>
+            <div class="videographerSlide">
+                <div class="cardWrap">
+                    <a class="card tdn" href="./emp_detail.html">
+                        <div class="card_img pr">
+                            <div class="vcSlide pr">
+                                <div class="pr test-vd h-100" id="v1">
+                                    <video preload="auto" loop class="card-img-top" alt="...">
+                                        <source src="./assets/vid/a.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <img src="./assets/img/user/a.jpg" class="profile_thumb" alt="">
+                            <span class="d-flex empRating aic fw-bold">4.5 / 5</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Peter Da</h5>
+                            <p class="card-text">I do wedding photography with high quality camera. </p>
+                            <div class="d-flex jcsb">
+                                <span class="d-flex">
+                                    <p class="mb-0 me-2">Starting Price</p>
+                                    <h5 class="mb-0 priceStart">₹4999</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cardWrap">
+                    <a class="card tdn" href="./emp_detail.html">
+                        <div class="card_img pr">
+                            <div class="vcSlide pr">
+                                <div class="pr test-vd h-100" id="v1">
+                                    <video preload="auto" loop class="card-img-top" alt="...">
+                                        <source src="./assets/vid/b.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <img src="./assets/img/user/a.jpg" class="profile_thumb" alt="">
+                            <span class="d-flex empRating aic fw-bold">4.5 / 5</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Peter Da</h5>
+                            <p class="card-text">I do wedding photography with high quality camera. </p>
+                            <div class="d-flex jcsb">
+                                <span class="d-flex">
+                                    <p class="mb-0 me-2">Starting Price</p>
+                                    <h5 class="mb-0 priceStart">₹4999</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="cardWrap">
+                    <a class="card tdn" href="./emp_detail.html">
+                        <div class="card_img pr">
+                            <div class="vcSlide pr">
+                                <div class="pr test-vd h-100" id="v1">
+                                    <video preload="auto" loop class="card-img-top" alt="...">
+                                        <source src="./assets/vid/a.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <img src="./assets/img/user/a.jpg" class="profile_thumb" alt="">
+                            <span class="d-flex empRating aic fw-bold">4.5 / 5</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Peter Da</h5>
+                            <p class="card-text">I do wedding photography with high quality camera. </p>
+                            <div class="d-flex jcsb">
+                                <span class="d-flex">
+                                    <p class="mb-0 me-2">Starting Price</p>
+                                    <h5 class="mb-0 priceStart">₹4999</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="cardWrap">
+                    <a class="card tdn" href="./emp_detail.html">
+                        <div class="card_img pr">
+                            <div class="vcSlide pr">
+                                <div class="pr test-vd h-100" id="v1">
+                                    <video preload="auto" loop class="card-img-top" alt="...">
+                                        <source src="./assets/vid/a.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <img src="./assets/img/user/a.jpg" class="profile_thumb" alt="">
+                            <span class="d-flex empRating aic fw-bold">4.5 / 5</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Peter Da</h5>
+                            <p class="card-text">I do wedding photography with high quality camera. </p>
+                            <div class="d-flex jcsb">
+                                <span class="d-flex">
+                                    <p class="mb-0 me-2">Starting Price</p>
+                                    <h5 class="mb-0 priceStart">₹4999</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="cardWrap">
+                    <a class="card tdn" href="./emp_detail.html">
+                        <div class="card_img pr">
+                            <div class="vcSlide pr">
+                                <div class="pr test-vd h-100" id="v1">
+                                    <video preload="auto" loop class="card-img-top" alt="...">
+                                        <source src="./assets/vid/a.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <img src="./assets/img/user/a.jpg" class="profile_thumb" alt="">
+                            <span class="d-flex empRating aic fw-bold">4.5 / 5</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Peter Da</h5>
+                            <p class="card-text">I do wedding photography with high quality camera. </p>
+                            <div class="d-flex jcsb">
+                                <span class="d-flex">
+                                    <p class="mb-0 me-2">Starting Price</p>
+                                    <h5 class="mb-0 priceStart">₹4999</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="cardWrap">
+                    <a class="card tdn" href="./emp_detail.html">
+                        <div class="card_img pr">
+                            <div class="vcSlide pr">
+                                <div class="pr test-vd h-100" id="v1">
+                                    <video preload="auto" loop class="card-img-top" alt="...">
+                                        <source src="./assets/vid/a.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <img src="./assets/img/user/a.jpg" class="profile_thumb" alt="">
+                            <span class="d-flex empRating aic fw-bold">4.5 / 5</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Peter Da</h5>
+                            <p class="card-text">I do wedding photography with high quality camera. </p>
+                            <div class="d-flex jcsb">
+                                <span class="d-flex">
+                                    <p class="mb-0 me-2">Starting Price</p>
+                                    <h5 class="mb-0 priceStart">₹4999</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="cardWrap">
+                    <a class="card tdn" href="./emp_detail.html">
+                        <div class="card_img pr">
+                            <div class="vcSlide pr">
+                                <div class="pr test-vd h-100" id="v1">
+                                    <video preload="auto" loop class="card-img-top" alt="...">
+                                        <source src="./assets/vid/a.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="cardWrap">
+                    <a class="card tdn" href="./emp_detail.html">
+                        <div class="card_img pr">
+                            <div class="vcSlide pr">
+                                <div class="pr test-vd h-100" id="v1">
+                                    <video preload="auto" loop class="card-img-top" alt="...">
+                                        <source src="./assets/vid/a.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <img src="./assets/img/user/a.jpg" class="profile_thumb" alt="">
+                            <span class="d-flex empRating aic fw-bold">4.5 / 5</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Peter Da</h5>
+                            <p class="card-text">I do wedding photography with high quality camera. </p>
+                            <div class="d-flex jcsb">
+                                <span class="d-flex">
+                                    <p class="mb-0 me-2">Starting Price</p>
+                                    <h5 class="mb-0 priceStart">₹4999</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="cardWrap">
+                    <a class="card tdn" href="./emp_detail.html">
+                        <div class="card_img pr">
+                            <div class="vcSlide pr">
+                                <div class="pr test-vd h-100" id="v1">
+                                    <video preload="auto" loop class="card-img-top" alt="...">
+                                        <source src="./assets/vid/a.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <img src="./assets/img/user/a.jpg" class="profile_thumb" alt="">
+                            <span class="d-flex empRating aic fw-bold">4.5 / 5</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Peter Da</h5>
+                            <p class="card-text">I do wedding photography with high quality camera. </p>
+                            <div class="d-flex jcsb">
+                                <span class="d-flex">
+                                    <p class="mb-0 me-2">Starting Price</p>
+                                    <h5 class="mb-0 priceStart">₹4999</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="cardWrap">
+                    <a class="card tdn" href="./emp_detail.html">
+                        <div class="card_img pr">
+                            <div class="vcSlide pr">
+                                <div class="pr test-vd h-100" id="v1">
+                                    <video preload="auto" loop class="card-img-top" alt="...">
+                                        <source src="./assets/vid/a.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <img src="./assets/img/user/a.jpg" class="profile_thumb" alt="">
+                            <span class="d-flex empRating aic fw-bold">4.5 / 5</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Peter Da</h5>
+                            <p class="card-text">I do wedding photography with high quality camera. </p>
+                            <div class="d-flex jcsb">
+                                <span class="d-flex">
+                                    <p class="mb-0 me-2">Starting Price</p>
+                                    <h5 class="mb-0 priceStart">₹4999</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="staticBanner bg_lite m_slider py-5">
+            <div class="container d-flex aic jcsb flex-wrap">
+
+                <div class="uspCard p-3 col-sm-6 col-md-3 col-lg-3">
+                    <div class="uspImg text-center">
+                        <img src="./assets/img/icons/rupee.png" class="uspicon">
+                    </div>
+                    <div class="text-center mt-3">
+                        <h6>Cost Effective</h6>
+                        <p>We are budget friendly</p>
+                    </div>
+                </div>
+                <div class="uspCard p-3 col-sm-6 col-md-3 col-lg-3">
+                    <div class="uspImg text-center">
+                        <!-- <i class="fa-solid fa-shield uspicon"></i> -->
+                        <img src="./assets/img/icons/shield.png" class="uspicon">
+                    </div>
+                    <div class="text-center mt-3">
+                        <h6>Safeguarding your Money</h6>
+                        <p>Usage of Escrow Account <br> to ensure that the agreements are met</p>
+                    </div>
+                </div>
+                <div class="uspCard p-3 col-sm-6 col-md-3 col-lg-3">
+                    <div class="uspImg text-center">
+                        <!-- <i class="fa-solid fa-user-secret uspicon"></i> -->
+                        <img src="./assets/img/icons/confidential.png" class="uspicon">
+                    </div>
+                    <div class="text-center mt-3">
+                        <h6>Maintaining Confidentiality</h6>
+                        <p>We respect your outright privacy</p>
+                    </div>
+                </div>
+                <div class="uspCard p-3 col-sm-6 col-md-3 col-lg-3">
+                    <div class="uspImg text-center">
+                        <!-- <i class="fa-brands fa-accessible-icon uspicon"></i> -->
+                        <img src="./assets/img/icons/accessbility.png" class="uspicon">
+                    </div>
+                    <div class="text-center mt-3">
+                        <h6>Accessibility</h6>
+                        <p>Availability of Freelancers from <br> every corner of India</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutUs" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease">
+            <div class="container py-5">
+                <div class="d-flex flex-wrap aic">
+
+                    <div class="col-sm-12 col-md-4">
+                        <img src="./assets/img/bg/ws.png" alt="" class="imgResponsive slide-right">
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <h3 class="mb-4">Why Us</h3>
+                        <p>From the start of 2020, the market size has decreased immensely but that doesn't mean
+                            distinction should too.</p>
+                        <p>We're aware of your needs so here at Medialancer, we present Freelance Photographers and
+                            Media Support Team who are not only experienced and skilled but also budget friendly. We
+                            will provide them to you without any intercessor
+                            at the most affordable rates.</p>
+                        <p>We are the Company who can end your pursuit of quality as we provide you with Top Freelancer
+                            Photographers for your every occasion. Your quest doesn't end there because we also provide
+                            Media Support to Businesses as well as Startups.</p>
+                        <p>We never compromise on Quality and Durability so, trust us to be your go-to brand as we
+                            capture your moments; not only with our cameras but with love and care.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="review container m_slider">
+            <div class="text-center mb-5">
+                <h5 class="fw-bold">What Customers says about us</h5>
+            </div>
+            <div class="reviewSlide">
+
+                <div class="reviewCard m-auto">
+                    <div class="d-flex aic jcc flex-column">
+                        <img src="./assets/img/photographer/a.jpg" alt="" class="review_user">
+                        <h5 class="mt-3">Robert Babu</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="reviewCard m-auto">
+                    <div class="d-flex aic jcc flex-column">
+                        <img src="./assets/img/photographer/b.jpg" alt="" class="review_user">
+                        <h5 class="mt-3">Robert Babu</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="reviewCard m-auto">
+                    <div class="d-flex aic jcc flex-column">
+                        <img src="./assets/img/photographer/c.jpg" alt="" class="review_user">
+                        <h5 class="mt-3">Robert Babu</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="reviewCard m-auto">
+                    <div class="d-flex aic jcc flex-column">
+                        <img src="./assets/img/photographer/d.jpg" alt="" class="review_user">
+                        <h5 class="mt-3">Robert Babu</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</section>
+<!-- Main Home Section End -->
+
+<!-- Footer -->
+<footer class="footer-section" style="top: -35vh">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>Kolkata</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>1234567890</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>info@medialancer.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="./index.html"><img src="./assets/img/logow.png" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                                incididuntut consec tetur adipisicing elit,Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./index.html#aboutUs">About us</a></li>
+                            <li><a href="./contactus.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Search</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Search Best Photographers/Videographers in your location</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text"
+                                    placeholder="Search Best Photographers/Videographers in your location">
+                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2022, All Right Reserved Medialancer</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- ************************************* Models Start****************************************************** -->
+<div class="modal fade" id="signinMain" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="fp_emailLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content fp_modal ovrlay">
+            <div class="modal-body pr d-flex">
+
+                <div class="card m-auto d-flex flex-row z99 container border-0 p-0 col-sm-12 col-md-9 col-lg-7">
+                    <a class="btn_close p-3" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid text-dark fa-xmark h3"></i>
+                    </a>
+                    <div class="col-6 loginImg d-flex jcc aic" style="background-color: #2a9d8f;">
+                        <img src="./assets/img/bg/bg.png" class="login_bkgrnd">
+                    </div>
+
+                    <div class="col p-0 log_in card" id="log_in">
+                        <div class="text-center p-3 pr">
+                            <div class="pr">
+                                <h4 class="fw-bolder loginheader">Welcome back to</h4>
+                            </div>
+                            <img src="./assets/img/logoB.png" class="mt-0" style="max-width:250px">
+                        </div>
+
+                        <form action="" class="mt-3 p-3">
+                            <div class="mb-4">
+                                <label for="user_login_email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="user_login_email"
+                                    placeholder="name@example.com">
+                            </div>
+                            <div class="mb-4">
+                                <label for="user_login_password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="user_login_password"
+                                    placeholder="*********">
+                            </div>
+                            <div class="d-flex jcsb td_none">
+                                <!-- <button type="submit" class="btn btn-primary">Login</button> -->
+                                <a class="btn btn-primary" href="./index.html">Login</a>
+                                <a href="javascript:void(0)" onclick="openModal()">Forgot Password ?</a>
+                            </div>
+                            <div class="text-center">
+                                <p class="mb-0">Not a member ? <a class="h5 tdn text-primary" onclick="gotoSignup()"
+                                        id="gotoSignup">Signup</a></p>
+                            </div>
+                        </form>
+                        <div class="ru_vendorWrap text-center bg_grey card_footer mt-4">
+                            <p class="mb-0">Are you vendor ! Click
+                                <a href="./vendorContact.html" class="h5 tdn text-primary" onclick="ru_vendor()"
+                                    id="ru_vendor">Here</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col p-3 sign_up" id="sign_up">
+                        <div class="text-center">
+                            <img src="./assets/img/logo.png" style="max-width:250px">
+                        </div>
+                        <h2 class="fw-bold text-muted">Signup</h2>
+                        <form action="" class="mt-5">
+                            <div class="mb-4">
+                                <label for="user_signup_name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="user_signup_name" placeholder="">
+                            </div>
+                            <div class="mb-4">
+                                <label for="user_signup_phone" class="form-label">Phone no.</label>
+                                <input type="number" class="form-control" id="user_signup_phone" placeholder="">
+                            </div>
+                            <div class="mb-4">
+                                <label for="user_signup_email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="user_signup_email" placeholder="">
+                            </div>
+                            <div class="mb-4">
+                                <label for="user_signup_pass" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="user_signup_pass" placeholder="">
+                            </div>
+                            <div class="">
+                                <button type="submit" class="btn btn-primary">Signup</button>
+                            </div>
+                            <div class="text-center">
+                                <p class="mb-0">Already a member ? <a class="h5 tdn text-primary" onclick="gotoSignin()"
+                                        id="gotoSignin">Signin</a></p>
+                            </div>
+                            <div class="ru_vendorWrap text-center mt-2">
+                                <p class="mb-0">Register as <a class="h5 tdn text-primary" onclick="ru_vendor()"
+                                        id="ru_vendor">
+                                        Vendor</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Forget Password Modal -->
+
+<div class="modal fade mt-5" id="fp_email" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="fp_emailLabel" aria-hidden="true">
+    <div class="modal-dialog fp_modal col-sm-8 col-md-5 col-lg-4">
+        <div class="modal-content fp_modal">
+            <div class="modal-body pr">
+                <a class="btn_close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></a>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email Id</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    </div>
+                    <div class="d-flex">
+                        <button type="button" class="btn btn-primary ms-auto" onclick="go_to_otp()">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- OPT Modal -->
+<div class="modal fade mt-5" id="otp_email" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="otp_emailLabel" aria-hidden="true">
+    <div class="modal-dialog fp_modal col-sm-8 col-md-5 col-lg-4">
+        <div class="modal-content fp_modal">
+            <div class="modal-body pr">
+                <a class="btn_close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="otp_input" class="form-label">Enter OTP</label>
+                        <input type="text" class="form-control" id="otp_input" placeholder="">
+                    </div>
+                    <div class="d-flex">
+                        <button type="button" class="btn btn-primary ms-auto" onclick="go_to_newPass()">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- New Pass Modal -->
+
+<div class="modal fade mt-5" id="fp_newPass" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="fp_newPassLabel" aria-hidden="true">
+    <div class="modal-dialog fp_modal col-sm-8 col-md-5 col-lg-4">
+        <div class="modal-content fp_modal">
+            <div class="modal-body pr">
+                <a class="btn_close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></a>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="new_pass" class="form-label">New Password</label>
+                        <input type="text" class="form-control" id="new_pass" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="conf_new_pass" class="form-label">Confirm New Password</label>
+                        <input type="password" class="form-control" id="conf_new_pass" placeholder="">
+                    </div>
+                    <div class="d-flex">
+                        <button type="button" class="btn btn-primary ms-auto"
+                            onclick="submit_to_newPass()">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ************************************* Models End****************************************************** -->
+<!-- CDNs -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./assets/js/custom.js"></script>
+<script>
+    $(document).ready(function () {
+        let data = [{
+
+        }]
+        var empRating = $(".empRating").css("background-color", "orange");
+
+        console.log(empRating);
+    })
+</script>
+<script>
+    // https://dog.ceo/api/breeds/image/random
+    fetch('https://dog.ceo/api/breeds/image/random')
+        .then(response => response.json())
+        .then(data => console.log(data));
+</script>
+
+<body>
+
+</body>
+<script>
+    $(document).ready(function () {
+
+        $(".test-vd").hover(
+            function () {
+                $(this).children("video").get(0).play();
+                console.log('play');
+            },
+            function () {
+                $(this).children("video").get(0).pause();
+                console.log('pause');
+
+                // Use if you want your video restart on hover again
+                $(this).children("video").get(0).currentTime = 0;
+
+            });
+
+        // $(".test-vd2").hover(function() {
+        //     $(this).children("video")[0].play();
+        // }, function() {
+        //     var el = $(this).children("video")[0];
+        //     el.pause();
+        //     el.currentTime = 0;
+        // });
+    });
+</script>
+
+</html>
